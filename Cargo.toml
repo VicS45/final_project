@@ -1,0 +1,15 @@
+[package]
+name = "final_project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+reqwest = { version = "0.11", features = ["json"] } # http client that will allow json data fetch from an api
+
+tokio = { version = "1", features = ["full"] } # will allow rust to have async runtime capabilities
+
+serde = { version = "1.0", features = ["derive"] } # allows parsing of json, with derive allowing serilization/deserialization
+
